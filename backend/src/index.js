@@ -6,6 +6,7 @@
 
 const express = require("express");
 const cors = require("cors");
+require('dotenv').config()
 const RecipeAPI = require("./recipe-api");
 const { PrismaClient } = require("@prisma/client");
 

@@ -2,7 +2,7 @@
 FROM node:18-alpine 
 
 # Set the working directory
-WORKDIR /src
+WORKDIR /app
 
 # Install dependencies
 COPY package*.json ./
@@ -18,4 +18,4 @@ RUN npx prisma generate
 EXPOSE 3000
 
 # Command to run the application
-CMD ["node","index.js"]
+CMD ["npm", "start"]
